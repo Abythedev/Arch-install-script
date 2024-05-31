@@ -54,5 +54,8 @@ git clone https://github.com/the-abinash/Arch-install-script /mnt/Arch-installer
 # Chroot into the mounted system
 arch-chroot /mnt bash Arch-installer/system_config.sh
 
-# Reboot
-reboot
+echo -ne "
+-------------------------------------------------------------------------
+                              Completed
+-------------------------------------------------------------------------
+"
