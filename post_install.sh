@@ -5,7 +5,7 @@ pacman -Sy timeshift grub-btrfs btrfs-progs
 
 # Timeshift configuration
 bash uuid_update.sh
-mv timeshift.json /etc/timeshift/
+cp timeshift.json /etc/timeshift/
 
 # Creating Snapshot
 timeshift --create --comments "Base install"
@@ -20,7 +20,7 @@ reflector --latest 20 --fastest 20 --country 'United States,India' --protocol ht
 pacman -Sy xfce4  xfce4-goodies blueman network-manager-applet file-roller redshift pipewire-pulse pipewire-alsa ntfs-3g lightdm-gtk-greeter lightdm-gtk-greeter-settings gvfs-mtp firefox ffmpegthumbnailer evince speech-dispatcher vlc xdg-user-dirs-gtk starship neofetch
 
 # Redshift configuration
-mv redshift.conf /home/badboy/.config/
+cp redshift.conf /home/badboy/.config/
 
 # Systemctl configuration
 systemctl enable --now cronie.service
