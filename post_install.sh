@@ -7,7 +7,7 @@ pacman -Sy reflector
 reflector --latest 20 --fastest 20 --country 'United States,India' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 # Install additional packages (replace with your desired packages)
-pacman -Sy xfce4  xfce4-goodies blueman network-manager-applet file-roller timeshift redshift pipewire-pulse pipewire-alsa ntfs-3g lightdm-gtk-greeter lightdm-gtk-greeter-settings gvfs-mtp firefox ffmpegthumbnailer evince grub-btrfs btrfs-progs speech-dispatcher vlc xdg-user-dirs-gtk starship
+pacman -Sy xfce4  xfce4-goodies blueman network-manager-applet file-roller timeshift redshift pipewire-pulse pipewire-alsa ntfs-3g lightdm-gtk-greeter lightdm-gtk-greeter-settings gvfs-mtp firefox ffmpegthumbnailer evince grub-btrfs btrfs-progs speech-dispatcher vlc xdg-user-dirs-gtk starship neofetch
 
 # Redshift configuration
 mv redshift.conf /home/badboy/.config/
