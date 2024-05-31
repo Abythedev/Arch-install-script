@@ -44,7 +44,7 @@ echo -ne "
                            Installing Base
 -------------------------------------------------------------------------
 "
-pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel amd-ucode grub efibootmgr nano sudo otf-comicshanns-nerd ttf-joypixels fish
+pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel amd-ucode grub efibootmgr nano sudo otf-comicshanns-nerd ttf-joypixels fish networkmanager
 
 # Generate fstab
 genfstab -U /mnt >> /mnt/etc/fstab
