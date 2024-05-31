@@ -36,3 +36,6 @@ passwd badboy
 
 # Enable wheel group for sudo access
 sed -i '/^# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/s/^#//' /etc/sudoers
+
+# Enable NetworkManager
+systemctl enable NetworkManager
