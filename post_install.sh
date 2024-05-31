@@ -19,7 +19,6 @@ mv timeshift.json /etc/timeshift/
 # Systemctl configuration
 systemctl enable --now cronie.service
 systemctl enable bluetooth
-systemctl enable NetworkManager
 systemctl enable lightdm
 
 # Shell Configuration
