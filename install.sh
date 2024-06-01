@@ -49,7 +49,7 @@ pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel amd-ucode gru
 # Generate fstab
 genfstab -U /mnt >> /mnt/etc/fstab
 
-git clone https://github.com/the-abinash/Arch-install-script /mnt/Arch-installer
+git clone https://github.com/the-abinash/Arch-install-script.git /mnt/Arch-installer
 
 # Chroot into the mounted system
 arch-chroot /mnt bash Arch-installer/system_config.sh
