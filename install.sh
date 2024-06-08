@@ -23,7 +23,7 @@ pacman -Sy --noconfirm archlinux-keyring
 # Format partitions
 echo -ne "
 -------------------------------------------------------------------------
-                          Creating Filsystems
+                          Creating Filesystems
 -------------------------------------------------------------------------
 "
 mkfs.btrfs -f /dev/sda1
